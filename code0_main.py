@@ -1,6 +1,6 @@
 # KG 7/29/2021
 ##
-# The main code on the modalNEB package!
+# The main code on the modalNEB package! Another test
 ##
 import os
 import numpy as np
