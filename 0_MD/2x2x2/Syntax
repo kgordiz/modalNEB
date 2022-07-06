@@ -1,0 +1,1 @@
+awk -f VASP-poscar2lammps.awk POSCAR > lattice.xyz

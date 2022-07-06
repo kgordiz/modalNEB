@@ -1,0 +1,28 @@
+Phonopy_path = 
+DFPT_vasprun_path1 = ./DFPT_00
+#path_2_DFPT_eqiulibrium_image = 
+
+mode_vis_sortedEn_True = faLsE
+mode_vis_unsorted_True = fAlsE
+
+filename_POSCAR_vesta_original = POSCAR.vesta
+#filename_ev_matrix = 
+
+NEB_True = true
+NEB_path1 = ./NEB
+LEPSILON_calc = false
+
+Temperature = 300
+fmin = -1000
+MP = 1 1 1
+
+Natoms_in_compound_formula = 5
+#AB_first = 
+
+FC3_modal_calc = FalsE
+FC3_file_pathway = ./fit3.fcs
+
+plotting_True = True
+
+persite_freq_True = FalsE
+persite_amp_True = falSe

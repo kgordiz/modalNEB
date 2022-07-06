@@ -1,0 +1,49 @@
+# LLTO (Li-La-Ti-O)
+
+# Types
+# 1 -> La
+# 2 -> Li
+# 3 -> O
+# 4 -> Ti
+
+# boundary and atoms--------------------------------------------------------------------------------
+ comm_modify 	 vel yes
+
+ units           metal
+ boundary        p p p
+ atom_style      charge
+ read_data	 LLTO.xyz
+
+# ---------- Define Interatomic Potential ---------------------
+ kspace_style pppm 1.0e-8
+ pair_style hybrid/overlay coul/long 15.0 buck 15.0
+ pair_coeff * * coul/long
+ pair_coeff 3 3 buck 2029.2204 0.343645 192.58
+ pair_coeff 2 3 buck 41051.938 0.151160 0.0
+ pair_coeff 1 3 buck 4369.393 0.278603 60.278
+ pair_coeff 3 4 buck 23707.909 0.185580 14.513
+
+# initial velocities-------------------------------------------------------------------
+ variable 	tmp equal 700
+ velocity       all create ${tmp} 123451
+
+# Relax-------------------------------------------------------------------
+ fix         	1 all nvt temp ${tmp} ${tmp} 0.1
+ thermo         1000
+ run            100000
+ unfix       	1
+
+# Run-------------------------------------------------------------------
+
+ group 		Lithium type 2
+ dump         	1 Lithium xyz 10 file.xyz
+ dump         	2 all xyz 50 file_all.xyz
+
+ #dump 		veldump1 atom_bulk custom 1 vel_bulk.txt id vx vy vz
+ #dump_modify    veldump1 format line "%d %E %E %E" sort id
+ #dump           video all xyz 10 vid.xyz
+
+ fix         	2 all nve
+ thermo         1000
+ run            2000000
+ unfix       	2

@@ -1,0 +1,13 @@
+python xyz_LAMMPS_transform_to_POSCAR_v1.py
+
+Convert the original POSCAR from direct to cartesian
+Put the Li section at the end of the file
+
+wc -l fposcar.txt
+cat POSCAR_orig_cartesian.vasp fposcar.txt > POSCAR_with_added_Li_cartesian
+
+remove the bonds belongoing to Li and La in Vesta
+
+#vi atoms_edited2.xyz
+#vmd atoms_edited2.xyz
+
