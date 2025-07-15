@@ -53,14 +53,13 @@ The theoretical framework and results are published in:
 ## Directory Structure
 
 modalNEB/
-|-- modalNEB/ # Main Python package for running modal NEB calculations
-|-- scripts/ # Example scripts and automation tools
-|-- analysis/
-|-- matlab/ # MATLAB code for post-processing and visualization
-|-- README.md
-|-- setup.py
-|-- requirements.txt
-
+  |-- modalNEB/         # Main Python package for running modal NEB calculations
+  |-- scripts/          # Example scripts and automation tools
+  |-- analysis/
+        |-- matlab/     # MATLAB code for post-processing and visualization
+  |-- README.md
+  |-- setup.py
+  |-- requirements.txt
 
 ---
 
