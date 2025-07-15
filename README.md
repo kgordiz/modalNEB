@@ -2,7 +2,6 @@
 
 Automated Python/Matlab Toolkit for Modal NEB Analysis and Visualization  
 Author: Kiarash Gordiz  
-Contact: [add your email or link, optional]
 
 ---
 
@@ -74,26 +73,19 @@ modalNEB/
 
 ## License
 
-[Add license info here if applicable.]
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
 
 ## Contact
 
 For questions, suggestions, or collaboration inquiries, please contact:  
-Kiarash Gordiz ([add email/link])
+Kiarash Gordiz (kgordiz@gmail.com)
 
 ---
 
 ## Acknowledgments
 
-Development supported by [your lab/PI/funding if you want to mention].
-
----
-
-**Instructions for contributors:**  
-- To add images, use the Markdown syntax:  
-  `![Description](relative/path/to/figure.png)`  
-  *(You can upload an image to the repo and reference it this way.)*
+Development supported by Professors Asegun Henry and Yang Shao-Horn at MIT.
 
 ---
