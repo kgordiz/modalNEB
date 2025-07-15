@@ -51,7 +51,7 @@ The theoretical framework and results are published in:
 ---
 
 ## Directory Structure
-
+```
 modalNEB/
   |-- modalNEB/         # Main Python package for running modal NEB calculations
   |-- scripts/          # Example scripts and automation tools
@@ -60,7 +60,7 @@ modalNEB/
   |-- README.md
   |-- setup.py
   |-- requirements.txt
-
+```
 ---
 
 ## Publications
